@@ -1,0 +1,206 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;   
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Modern font */
+    line-height: 1.6;
+    background-color: rgb(176, 176, 176); /* Light gray background */
+    color: #333; /* Dark gray text for readability */
+}
+
+/* Header styles */
+header {
+    background: #fff; /* White background for a clean look */
+    color: #333; /* Dark text */
+    padding: 30px 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    position: fixed; /* Fixed position */
+    top: 0; /* Stick to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Stay above other content */
+}
+
+header h1 {
+    font-size: 3em; /* Large title */
+    font-weight: bold;
+    letter-spacing: 2px; /* Spacing for a premium feel */
+}
+
+/* Navigation styles */
+nav {
+    display: flex; /* Flexbox for navigation */
+    justify-content: center; /* Center nav items */
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Flexbox for the list */
+    gap: 30px; /* Generous spacing between items */
+    flex-wrap: wrap; /* Allow wrapping of items */
+}
+
+nav ul li {
+    flex: 1 1 150px; /* Flex-grow, flex-shrink, flex-basis for responsiveness */
+}
+
+nav ul li a {
+    background: #4a4a4a; /* Dark gray background */
+    color: #fff; /* White text */
+    padding: 12px 25px; /* Spacious padding */
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 30px; /* Fully rounded buttons */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 150px auto; /* Adjusted margin for fixed header */
+    padding: 40px;
+    background: #fff; /* White background for content area */
+    border-radius: 15px; /* Soft rounded corners */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Strong shadow for depth */
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+h2 {
+    color: #4a4a4a; /* Dark gray for section titles */
+    margin-bottom: 15px;
+    font-size: 2em; /* Size for section headers */
+    border-bottom: 2px solid #e1e1e1; /* Underline for emphasis */
+    padding-bottom: 10px; /* Spacing below header */
+}
+
+p {
+    margin-bottom: 20px;
+    line-height: 1.8; /* Increased line height for readability */
+}
+
+/* Art gallery styles */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px; /* Space between boxes */
+    padding: 20px;
+}
+
+.art-piece {
+    background: #f4f4f4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.art-piece:hover {
+    transform: scale(1.05);
+}
+
+.art-piece img {
+    width: 100%;
+    height: auto;
+}
+
+.art-details {
+    padding: 15px;
+    text-align: center;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #4a4a4a; /* Dark gray for footer */
+    color: #fff; /* White text */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive styles */
+/* Responsive styles */
+@media (max-width: 1600px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    body
+    {
+        margin-top: 300px;
+    }
+}
+
+@media (max-width: 1200px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    body
+    {
+        margin-top: 300px;
+    }
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        gap: 20px; /* Reduce gap on smaller screens */
+        justify-content: center; /* Center the items */
+    }
+
+    nav ul li {
+        flex: 1 1 45%; /* Allow items to take up to 45% of the width, stacking in two rows */
+    }
+
+    body
+    {
+        margin-top: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    main {
+        padding: 20px; /* Less padding on smaller screens */
+    }
+
+    body
+    {
+        margin-top: 300px;
+    }
+}
+
+/* Link states */
+nav ul li a:visited {
+    color: #ccc; /* Light gray for visited links */
+}
+
+nav ul li a:focus {
+    outline: 2px solid #4a4a4a; /* Dark gray outline for accessibility */
+}
+
+/* Hover state */
+nav ul li a:hover {
+    background: #333; /* Darker gray on hover */
+    transform: translateY(-3px); /* Lift effect on hover */
+}
+
+/* Active state */
+nav ul li a:active {
+    background: #666; /* Lighter gray when active */
+    transform: translateY(0); /* Reset lift effect */
+}

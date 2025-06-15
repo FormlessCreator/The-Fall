@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Model Showcase</title>
+    <link rel="stylesheet" href="style/models.css">
+</head>
+<body>
+    <header>
+        <h1>3D Model Showcase</h1>
+        <nav>
+            <ul>
+                <li><a href="project-homepage.html">Home</a></li>
+                <li><a href="art-gallery.html">Art Gallery</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="text-stories.html">Text Stories</a></li>
+                <li><a href="annotated-bibliography.html">Bibliography</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <!-- Music 1 -->
+            <section>
+                <h2>Process</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maiores laboriosam aspernatur consequuntur cumque eum ipsum, velit ad magnam at et alias ipsa ipsam! Ipsam temporibus doloribus delectus. Cumque, dignissimos veniam.</p>
+            </section>
+            <h2>Featured 3D Models</h2>
+            <div class="gallery">
+                <div class="model-piece">
+                    <model-viewer src="path/to/model1.glb" alt="3D Model 1" auto-rotate camera-controls></model-viewer>
+                    <div class="model-details">
+                        <h3>Model Title 1</h3>
+                        <p>Creator: Creator Name</p>
+                        <p>Year: 2024</p>
+                    </div>
+                </div>
+                <div class="model-piece">
+                    <model-viewer src="path/to/model2.glb" alt="3D Model 2" auto-rotate camera-controls></model-viewer>
+                    <div class="model-details">
+                        <h3>Model Title 2</h3>
+                        <p>Creator: Creator Name</p>
+                        <p>Year: 2024</p>
+                    </div>
+                </div>
+                <div class="model-piece">
+                    <model-viewer src="path/to/model3.glb" alt="3D Model 3" auto-rotate camera-controls></model-viewer>
+                    <div class="model-details">
+                        <h3>Model Title 3</h3>
+                        <p>Creator: Creator Name</p>
+                        <p>Year: 2024</p>
+                    </div>
+                </div>
+                <!-- Repeat for more models -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 3D Model Showcase. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</body>
+</html>
